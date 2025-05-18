@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #d62c1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+}
+.btn-outline:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav-list {
+  display: flex;
+}
+.header .nav-list li {
+  margin-left: 2rem;
+}
+.header .nav-list li a {
+  font-weight: bold;
+  position: relative;
+}
+.header .nav-list li a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e74c3c;
+  transition: all 0.3s ease;
+}
+.header .nav-list li a:hover:after, .header .nav-list li a.active:after {
+  width: 100%;
+}
+.header .nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  color: white;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.features {
+  padding: 4rem 0;
+}
+.features h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.features .feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.features .feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.features .feature-card-icon {
+  margin-bottom: 1rem;
+  fill: #e74c3c;
+}
+.features .feature-card h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.features .feature-card p {
+  color: #95a5a6;
+}
+
+.membership {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+.membership h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.membership .membership-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.membership .membership-card.popular {
+  border: 2px solid #e74c3c;
+}
+.membership .membership-card.popular .popular-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.membership .membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.membership .membership-card h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+.membership .membership-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+.membership .membership-card .price span {
+  font-size: 1rem;
+  color: #95a5a6;
+}
+.membership .membership-card .benefits {
+  margin-bottom: 2rem;
+}
+.membership .membership-card .benefits li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.membership .membership-card .benefits li:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 4rem 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.footer-col h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.footer-col p, .footer-col a {
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+.footer-col a:hover {
+  opacity: 1;
+  color: #e74c3c;
+}
+.footer .social-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer .social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footer .social-links a:hover {
+  background-color: #e74c3c;
+  transform: translateY(-3px);
+}
+.footer .social-links a:hover svg {
+  fill: white;
+}
+.footer .social-links a svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+}
+.footer-bottom p {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .header .nav-list {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+  }
+  .header .nav-list.active {
+    left: 0;
+  }
+  .header .nav-list li {
+    margin: 1rem 0;
+  }
+  .header .nav-toggle {
+    display: block;
+  }
+  .hero {
+    padding: 6rem 0 2rem;
+  }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

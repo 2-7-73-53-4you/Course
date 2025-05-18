@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши услуги | Фитнес-центр</title>
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg width="120" height="60" viewBox="0 0 120 60">
+                    <rect x="10" y="10" width="100" height="40" rx="5" fill="#e74c3c"/>
+                    <text x="60" y="35" text-anchor="middle" fill="white" font-family="Arial" font-size="20">FITNESS</text>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Меню">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>Наши услуги</h1>
+                <p>Выберите оптимальный вариант для достижения ваших целей</p>
+            </div>
+            <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </section>
+
+        <section class="services-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все услуги</button>
+                    <button class="filter-btn" data-filter="gym">Тренажерный зал</button>
+                    <button class="filter-btn" data-filter="group">Групповые занятия</button>
+                    <button class="filter-btn" data-filter="personal">Персональные тренировки</button>
+                    <button class="filter-btn" data-filter="other">Другие услуги</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-grid-section">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Тренажерный зал -->
+                    <article class="service-card gym" data-category="gym">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Тренажерный зал">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>Тренажерный зал</h2>
+                            <div class="service-meta">
+                                <span class="price">от 150BYN/мес</span>
+                                <span class="duration">24/7 доступ</span>
+                            </div>
+                            <p>Современное оборудование от ведущих мировых производителей для всех групп мышц. Просторные залы с зонами для свободных весов и кардио.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Доступ 24/7
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Персональный инструктаж
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Зона кардио
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Что включено:</h3>
+                                <ul>
+                                    <li>Неограниченный доступ в тренажерный зал</li>
+                                    <li>Первичный инструктаж с тренером</li>
+                                    <li>Бесплатное полотенце</li>
+                                    <li>Душевые и раздевалки</li>
+                                    <li>Wi-Fi на территории</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Групповые занятия -->
+                    <article class="service-card group" data-category="group">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Групповые занятия">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>Групповые занятия</h2>
+                            <div class="service-meta">
+                                <span class="price">от 30BYN/занятие</span>
+                                <span class="duration">60-90 минут</span>
+                            </div>
+                            <p>Разнообразные программы групповых тренировок для любого уровня подготовки. Йога, пилатес, функциональный тренинг, танцы и многое другое.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Более 20 направлений
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Профессиональные тренеры
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Разные уровни сложности
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Популярные направления:</h3>
+                                <ul>
+                                    <li>Йога (Хатха, Виньяса, Айенгара)</li>
+                                    <li>Пилатес (мат, реформер)</li>
+                                    <li>Функциональный тренинг</li>
+                                    <li>Танцевальные классы (Zumba, Latina)</li>
+                                    <li>Кроссфит</li>
+                                    <li>Стретчинг</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Персональные тренировки -->
+                    <article class="service-card personal" data-category="personal">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Персональные тренировки">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>Персональные тренировки</h2>
+                            <div class="service-meta">
+                                <span class="price">от 50BYN/тренировка</span>
+                                <span class="duration">60 минут</span>
+                            </div>
+                            <p>Индивидуальный подход и программа тренировок, разработанная специально для вас с учетом ваших целей, физической подготовки и состояния здоровья.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Индивидуальная программа
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Гибкий график
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Контроль прогресса
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Преимущества:</h3>
+                                <ul>
+                                    <li>Персональный тренер с профильным образованием</li>
+                                    <li>Составление индивидуальной программы тренировок</li>
+                                    <li>Коррекция питания (по запросу)</li>
+                                    <li>Контроль техники выполнения упражнений</li>
+                                    <li>Анализ прогресса и корректировка программы</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Бассейн -->
+                    <article class="service-card other" data-category="other">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Бассейн">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M22 16v-2l-8.5-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V9L2 14v2l8.5-2.5V19L8 20.5V22l4-1 4 1v-1.5L13.5 19v-5.5L22 16z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>Бассейн</h2>
+                            <div class="service-meta">
+                                <span class="price">от 40BYN/посещение</span>
+                                <span class="duration">45-90 минут</span>
+                            </div>
+                            <p>25-метровый бассейн с современной системой очистки воды. Групповые и индивидуальные занятия по плаванию, аквааэробика.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    25-метровая дорожка
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Аквааэробика
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Тренер по плаванию
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Услуги бассейна:</h3>
+                                <ul>
+                                    <li>Свободное плавание</li>
+                                    <li>Групповые занятия аквааэробикой</li>
+                                    <li>Индивидуальные уроки плавания</li>
+                                    <li>Детские занятия с тренером</li>
+                                    <li>СПА-зона с гидромассажем</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SPA и массаж -->
+                    <article class="service-card other" data-category="other">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="SPA и массаж">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6c-1.1 0-2 .9-2 2v2.15c1.16.41 2 1.51 2 2.82V14h12v-2.03c0-1.3.84-2.4 2-2.82V7c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>SPA и массаж</h2>
+                            <div class="service-meta">
+                                <span class="price">от 100BYN/сеанс</span>
+                                <span class="duration">30-90 минут</span>
+                            </div>
+                            <p>Профессиональные массажи и SPA-процедуры для восстановления после тренировок, снятия стресса и улучшения самочувствия.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Разные виды массажа
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    СПА-процедуры
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Профессиональные косметологи
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Виды процедур:</h3>
+                                <ul>
+                                    <li>Спортивный массаж</li>
+                                    <li>Антицеллюлитный массаж</li>
+                                    <li>Тайский массаж</li>
+                                    <li>Обертывания</li>
+                                    <li>Уходовые процедуры для лица</li>
+                                    <li>Криотерапия</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Детский фитнес -->
+                    <article class="service-card other" data-category="other">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Детский фитнес">
+                            <svg class="service-icon" viewBox="0 0 24 24">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h2>Детский фитнес</h2>
+                            <div class="service-meta">
+                                <span class="price">от 60BYN/занятие</span>
+                                <span class="duration">45-60 минут</span>
+                            </div>
+                            <p>Специальные программы для детей разных возрастов, направленные на гармоничное физическое развитие и формирование здоровых привычек.</p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Для детей 3-16 лет
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Игровой формат
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                    </svg>
+                                    Профессиональные педагоги
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline toggle-details">Подробнее</button>
+                            <div class="service-details">
+                                <h3>Программы:</h3>
+                                <ul>
+                                    <li>Фитнес для малышей (3-6 лет)</li>
+                                    <li>Спортивные игры (7-12 лет)</li>
+                                    <li>Подростковый фитнес (13-16 лет)</li>
+                                    <li>Детская йога</li>
+                                    <li>Занятия в бассейне</li>
+                                    <li>Танцевальные классы</li>
+                                </ul>
+                                <button class="btn book-btn">Записаться</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="container">
+                <h2>Тарифные планы</h2>
+                <p class="section-subtitle">Выберите оптимальный вариант для регулярных тренировок</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Стандарт</h3>
+                        <div class="price">150BYN <span>/месяц</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Тренажерный зал
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Групповые занятия
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Фитнес-тестирование
+                            </li>
+                            <li class="not-included">
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                </svg>
+                                Персональные тренировки
+                            </li>
+                            <li class="not-included">
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                </svg>
+                                SPA-зона
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline">Выбрать</button>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Популярный</div>
+                        <h3>Премиум</h3>
+                        <div class="price">200BYN <span>/месяц</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Все из Стандарт
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                2 персональные тренировки
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Солярий
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                SPA-зона
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Безлимитный доступ
+                            </li>
+                        </ul>
+                        <button class="btn">Выбрать</button>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <h3>VIP</h3>
+                        <div class="price">350BYN <span>/месяц</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Все из Премиум
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                8 персональных тренировок
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Индивидуальная программа
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Персональный шкафчик
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Все групповые занятия
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Фитнес Центр</h3>
+                    <p>Мы помогаем нашим клиентам достигать своих фитнес-целей с 2010 года.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <address>
+                        <p>г. Минск</p>
+                        <p>Телефон: <a href="tel:+79991234567">+375 (29)...</a></p>
+                        <p>Email: <a href="mailto:info@fitness-center.ru">info@fitness-center.ru</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 6:00 - 23:00</p>
+                    <p>Сб-Вс: 8:00 - 22:00</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Фитнес Центр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/services.js"></script>
+</body>
+</html>
